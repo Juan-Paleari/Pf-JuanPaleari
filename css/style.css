@@ -1,490 +1,364 @@
-/* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+header .logo {
+  width: 60%;
+  display: flex;
+  align-items: left; }
 
-/* estilo del header de todos los html */
-header .logo{
-    width: 60%;
-    display: flex;
-    align-items: left;
-    
-}
+header .menu-color {
+  background-color: #085a08;
+  position: sticky;
+  text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
+  text-transform: uppercase; }
 
-header .menu-color{
-    background-color: rgb(8, 90, 8);
-    position: sticky;
-    text-align: center;
-    font-family: 'Nanum Myeongjo', serif;
-    text-transform: uppercase;
-    
-    
-}
+header .menu-posicion {
+  justify-content: right; }
 
-header .menu-posicion{
-    justify-content: right;
-}
-
-li .color-link{
+header ul {
+  display: block;
+  list-style-type: disc; }
+  header ul li .color-link {
+    color: whitesmoke; }
+  header ul li .color-link:hover {
     color: whitesmoke;
-}
-
-li .color-link:hover{
-    color: whitesmoke;
-    text-decoration: underline;
-}
-
-header a{
+    text-decoration: underline; }
+  header ul li a {
     text-decoration: none;
-    color: white;
-}
+    color: white; }
 
-.menu ul{
-    display: block;
-    list-style-type: disc;
-}
-.menu-posicion{
-    display: flex;
-    justify-content: end;
-}
-.menu ul li{
-    display: inline-block;
-    margin: 30px;
-    font-family: 'Nanum Myeongjo', serif;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-    /* Estilo de todos los footer */
-    
 footer {
-    height: 2rem;
-    margin-top: auto;
-    background-color: rgb(8, 90, 8);
-    text-align: center;
-    bottom: 0;  
-}
-
-footer h3{
+  height: 2rem;
+  margin-top: auto;
+  background-color: #085a08;
+  text-align: center;
+  bottom: 0; }
+  footer h3 {
     font-size: 15px;
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: none;
-}
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: none; }
 
-
- /* Estilos del Home */
-main .inicio{
-    height:70vh;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-main .img-home{
+main .inicio {
+  height: 70vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  main .inicio .img-home {
     width: 100%;
     height: 100%;
     position: relative;
+    justify-content: center; }
+
+@media screen and (min-width: 600px) {
+  main .inicio {
+    display: block;
     justify-content: center;
-}
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
+  main .img-home {
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center; } }
 
-@media screen and (min-width:600px){
+@media screen and (min-width: 1024px) {
+  main .inicio {
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
+  main .img-home {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center; } }
 
-    main .inicio{
-        display: block;
-        justify-content: center;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    main .img-home{
-        width: 100%;
-        height: 100%;
-        display: block;
-        align-items: center;
-    }
-}
-
-    @media screen and (min-width:1024px){
-        main .inicio{
-            display: grid;
-            place-items: center;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        main .img-home{
-            display: flex;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-        }
-}
-
-
-
-
-
-
-/* estilos de quienes somos */
-
-main{
-    margin-top: 1.5rem;
-}
-
-main h2{
+main {
+  margin-top: 1.5rem; }
+  main h2 {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
-    background-color: rgb(8, 90, 8);
+    background-color: #085a08;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
-    
-}
-
-main p{
+    margin-bottom: 1rem; }
+  main p {
     color: white;
     font-size: 25px;
     font-family: 'Dancing Script', cursive;
-    background-color: rgb(8, 90, 8);
+    background-color: #085a08;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-}
-/* mq tablet */
+    height: 70vh; }
 
-@media screen and (min-width:600px){
-    main h2{
-        color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 40px;
-        background-color: rgb(8, 90, 8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-        
-    }
-    
-    main p{
-        color: white;
-        font-size: 25px;
-        font-family: 'Dancing Script', cursive;
-        background-color: rgb(8, 90, 8);
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 70vh;
-    }
-    
-}
-
-/* mq desk */
-
-@media screen and (min-width:1024px){
-
-    main h2{
-        color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 50px;
-        background-color: rgb(8, 90, 8);
-        display: inline-block;
-        justify-content: left;
-        align-items: left;
-        margin-bottom: 1rem;
-        
-    }
-    
-    main p{
-        color: white;
-        font-size: 50px;
-        font-family: 'Dancing Script', cursive;
-        background-color: rgb(8, 90, 8);
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 70vh;
-    }
-
-}
-
-
-/* estilos de productos */
-
-
-main .titulo{
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Satisfy', cursive;
-}
-
-main .padre{
-    height: 70vh;
+@media screen and (min-width: 600px) {
+  main h2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    background-color: #085a08;
     display: flex;
-    background-color: rgb(8, 90, 8);
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
-}
-
-main .productos{
-    font-size: 20px;
+    margin-bottom: 1rem; }
+  main p {
+    color: white;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #085a08;
     text-align: center;
+    display: flex;
     align-items: center;
-}
+    justify-content: center;
+    height: 70vh; } }
 
-main .titulo-producto{
-    text-decoration: underline;
-}
-main .ul{
-    list-style: none;
-}
+@media screen and (min-width: 1024px) {
+  main h2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    background-color: #085a08;
+    display: inline-block;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 1rem; }
+  main p {
+    color: white;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #085a08;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; } }
 
-main .gustos{
-    list-style: none;
-    font-size: 1rem;
-}
+main .titulo {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive; }
 
-main .img-uno, .img-dos, .img-tres{
-    display: none;
-}
+main .padre {
+  height: 70vh;
+  display: flex;
+  background-color: #085a08;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
 
-main .productos{
-    color: whitesmoke;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: space-between;
-}
+main .productos {
+  font-size: 20px;
+  text-align: center;
+  align-items: center; }
 
-/* mq tablet */
+main .titulo-producto {
+  text-decoration: underline; }
 
-@media screen and (min-width:600px){
+main ul {
+  list-style: none; }
 
-    main .img-uno, .img-dos, .img-tres{
-        display: block;
-    }
+main .gustos {
+  list-style: none;
+  font-size: 1rem; }
 
-main .padre{
+main .img-uno .img-dos .img-tres {
+  display: none; }
+
+main .productos {
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  justify-content: space-between; }
+
+@media screen and (min-width: 600px) {
+  main .img-uno .img-dos .img-tres {
+    display: block; }
+  main .padre {
     display: grid;
-    background-color: rgb(8, 90, 8);
+    background-color: #085a08;
     margin: 5rem 2rem 5rem 2rem;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1.5fr 1.5fr 1.5fr;
     gap: 2rem;
-    grid-template-areas:
-    "productos imagenes"
-    "productos imagenes"
-    "productos imagenes" ;
+    grid-template-areas: "productos imagenes" "productos imagenes" "productos imagenes";
     row-gap: 3rem;
     column-gap: 3rem;
     justify-items: center;
-    align-items: center;
-}
-
-main .productos{
-   text-align: left;
-}
-.img-uno{
+    align-items: center; }
+  main .productos {
+    text-align: left; }
+  main .img-uno {
     margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.img-dos{
-    margin-bottom: 1rem;
-}
-
-.img-tres{
-    margin-bottom: 1rem;
-}
-
-.sorrentinos{
+    margin-bottom: 1rem; }
+  main .img-dos {
+    margin-bottom: 1rem; }
+  main .img-tres {
+    margin-bottom: 1rem; }
+  main .sorrentinos {
     width: 70%;
-    height: 70%;
-}
-
-.ravioles{
+    height: 70%; }
+  main .ravioles {
     width: 70%;
-    height: 70%;
-}
-
-.ñoquis{
+    height: 70%; }
+  main .ñoquis {
     width: 70%;
-    height: 70%;
-}
+    height: 70%; } }
 
-
-}
-
-/* esto para mq desk*/
-@media screen and (min-width:1024px){
-
-    main .img-uno, .img-dos, .img-tres{
-        display: block;
-    }
-
-main .padre{
+@media screen and (min-width: 1024px) {
+  main .img-uno .img-dos .img-tres {
+    display: block; }
+  main .padre {
     height: 75vh;
     display: grid;
-    background-color: rgb(8, 90, 8);
+    background-color: #085a08;
     margin: 1rem 15rem 1rem 15rem;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1.5fr 1.5fr 1.5fr;
     gap: 2rem;
-    grid-template-areas:
-    "productos imagenes"
-    "productos imagenes"
-    "productos imagenes" ;
+    grid-template-areas: "productos imagenes" "productos imagenes" "productos imagenes";
     row-gap: 3rem;
     column-gap: 3rem;
     justify-items: center;
-    align-items: center;
-}
-
-main .productos{
-   text-align: left;
-   font-size: 35px;
-}
-.img-uno{
+    align-items: center; }
+  main .productos {
+    text-align: left;
+    font-size: 35px; }
+  main .img-uno {
     margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.img-dos{
-    margin-bottom: 1rem;
-}
-
-.img-tres{
-    margin-bottom: 1rem;
-}
-
-.sorrentinos{
+    margin-bottom: 1rem; }
+  main .img-dos {
+    margin-bottom: 1rem; }
+  main .img-tres {
+    margin-bottom: 1rem; }
+  main .sorrentinos {
     width: 100%;
-    height: 100%;
-}
-
-.ravioles{
+    height: 100%; }
+  main .ravioles {
     width: 100%;
-    height: 100%;
-}
-
-.ñoquis{
+    height: 100%; }
+  main .ñoquis {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; } }
 
+main .info-padre {
+  display: inline-block;
+  background-color: #085a08;
+  color: white;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 37.5rem;
+  font-size: 20px; }
 
-}
+main .info {
+  display: flex;
+  text-align: center; }
 
+main .envios-mapa {
+  display: flex;
+  margin: top 5rem;
+  justify-content: center; }
 
-
-/* estilos envio */
-
-main .info-padre{
+@media screen and (min-width: 600px) {
+  main .info-padre {
     display: inline-block;
-    background-color: rgb(8, 90, 8);
+    background-color: #085a08;
     color: white;
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
     height: 37.5rem;
-    font-size: 20px;
-
-}
-
-main .info{
+    font-size: 25px; }
+  main .info {
     display: flex;
-    text-align: center;
-    
-}
-
-main .envios-mapa{
+    text-align: center; }
+  main .envios-mapa {
     display: flex;
     margin-top: 5rem;
-    justify-content: center;
-}
+    justify-content: center; } }
 
-@media screen and (min-width:600px){
-    main .info-padre{
-        display: inline-block;
-        background-color: rgb(8, 90, 8);
-        color: white;
-        text-align: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        height: 37.5rem;
-        font-size: 25px;
-    
-    }
-    
-    main .info{
-        display: flex;
-        text-align: center;
-        
-    }
-    
-    main .envios-mapa{
-        display: flex;
-        margin-top: 5rem;
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width:1024px){
-
-    main .info-padre{
-        display: inline-block;
-        background-color: rgb(8, 90, 8);
-        color: white;
-        text-align: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        height: 37.5rem;
-        font-size: 30px;
-    
-    }
-    
-    main .info{
-        display: flex;
-        text-align: center;
-        
-    }
-    
-    main .envios-mapa{
-        display: flex;
-        margin-top: 5rem;
-        justify-content: center;
-    }
-
-}
-/* estilos contacto */
-main .link{
-    text-decoration: underline;
+@media screen and (min-width: 1024px) {
+  main .info-padre {
+    display: inline-block;
+    background-color: #085a08;
     color: white;
-}
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 37.5rem;
+    font-size: 30px; }
+  main .info {
+    display: flex;
+    text-align: center; }
+  main .envios-mapa {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center; } }
 
-main .titulo-forms{
-    font-size: 21px;
-}
+main .link {
+  text-decoration: underline;
+  color: white; }
 
-main .fondo-dos{
-    background-color: rgb(8, 90, 8);
+main .titulo-forms {
+  font-size: 12px; }
+
+main .fondo-dos {
+  background-color: #085a08;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 2rem 1rem 2rem 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 70vh;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center; }
+
+main .formulario-contacto {
+  list-style-type: none; }
+
+main .consulta-titulo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+main .consulta {
+  width: 300px;
+  height: 60px;
+  text-align: left;
+  justify-content: start;
+  border: 10px;
+  margin-top: 5px; }
+
+main .enviar {
+  margin-top: 1rem; }
+
+main .boton-enviar {
+  outline-style: none;
+  background-color: white;
+  font-size: 17px;
+  text-align: center; }
+
+@media screen and (min-width: 600px) {
+  main .link {
+    text-decoration: underline;
+    color: white; }
+  main .titulo-forms {
+    font-size: 21px; }
+  main .fondo-dos {
+    background-color: #085a08;
     display: block;
     color: white;
     text-align: center;
@@ -494,129 +368,42 @@ main .fondo-dos{
     height: 70vh;
     font-size: 20px;
     align-items: center;
-    justify-content: center;
-}
-
-main .formulario-contacto{
-    list-style-type: none;
-}
-
-main .consulta-titulo{
+    justify-content: center; }
+  main .formulario-contacto {
+    list-style-type: none; }
+  main .consulta-titulo {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
-}
-
-main .consulta{
+    justify-content: center; }
+  main .consulta {
     width: 300px;
     height: 60px;
-    text-align:left;
-    justify-content:start;
+    text-align: left;
+    justify-content: start;
     border: 10px;
-    margin-top: 5px;
-}
+    margin-top: 5px; } }
 
-main .enviar{
-    margin-top: 1rem;
-}
-
-main .boton-enviar{
-    outline-style: none;
-    background-color: white;
-    font-size: 17px;
+@media screen and (min-width: 1024px) {
+  main .link {
+    text-decoration: underline;
+    color: white; }
+  main .titulo-forms {
+    font-size: 30px; }
+  main .fondo-dos {
+    background-color: #085a08;
+    display: block;
+    color: white;
     text-align: center;
-}
-/* mq tablet */
-@media screen and (min-width:600px){
-
-    main .link{
-        text-decoration: underline;
-        color: white;
-    }
-    
-    main .titulo-forms{
-        font-size: 21px;
-    }
-    
-    main .fondo-dos{
-        background-color: rgb(8, 90, 8);
-        display: block;
-        color: white;
-        text-align: center;
-        margin: 2rem 1rem 2rem 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        height: 70vh;
-        font-size: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    main .formulario-contacto{
-        list-style-type: none;
-    }
-    
-    main .consulta-titulo{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    main .consulta{
-        width: 300px;
-        height: 60px;
-        text-align:left;
-        justify-content:start;
-        border: 10px;
-        margin-top: 5px;
-    }
-
-}
-
-
-/* mq desk */
-@media screen and (min-width:1024px){
-
-    main .link{
-        text-decoration: underline;
-        color: white;
-    }
-
-    main .titulo-forms{
-        font-size: 30px;
-    }
-    
-    main .fondo-dos{
-        background-color: rgb(8, 90, 8);
-        color: white;
-        text-align: center;
-        margin-left: 20rem;
-        margin-right: 20rem;
-        height: 70vh;
-        font-size: 25px;
-    }
-
-    main .formulario-contacto{
-        list-style-type: none;
-    }
-  
-    main .consulta{
-        width: 500px;
-        height: 250px;
-        text-align: center;
-        border: 10px;
-        margin-top: 5px;
-    }
-    
-    
-}
-
-
-
-
-
-
-
-
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 70vh;
+    font-size: 25px; }
+  main .formulario-contacto {
+    list-style-type: none; }
+  main .consulta {
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    border: 10px;
+    margin-top: 5px; } }

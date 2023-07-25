@@ -1,0 +1,550 @@
+// reset
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+// estilos header todos los html
+
+header{
+    .logo{
+        width: 60%;
+        display: flex;
+        align-items: left;
+    }
+
+    .menu-color{
+        background-color: rgb(8, 90, 8);
+        position: sticky;
+        text-align: center;
+        font-family: 'Nanum Myeongjo', serif;
+        text-transform: uppercase;
+    }
+
+    .menu-posicion{
+        justify-content: right;
+    }
+    ul{
+        display: block;
+        list-style-type: disc;
+
+        li .color-link{
+            color: whitesmoke;
+        }
+        li .color-link:hover{
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+}
+
+// estilos de todos los footer
+
+footer {
+    height: 2rem;
+    margin-top: auto;
+    background-color: rgb(8, 90, 8);
+    text-align: center;
+    bottom: 0;
+    h3{
+        font-size: 15px;
+        color: white;
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: none;
+    }
+}
+
+// estilos del home
+
+main {
+
+ .inicio{
+    height: 70vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .img-home{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        justify-content: center;
+    }
+}
+    
+}
+@media screen and (min-width:600px){
+ main{
+    .inicio{
+        display: block;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .img-home{
+        width: 100%;
+        height: 100%;
+        display: block;
+        align-items: center;
+    }
+ }
+
+}
+
+@media screen and (min-width:1024px){
+    main{
+        .inicio{
+            display: grid;
+            place-items: center;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+         }
+        .img-home{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+    }
+}
+
+// estilos de quienes somos
+
+    main{
+        margin-top: 1.5rem;
+        h2{
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 40px;
+            background-color: rgb(8, 90, 8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            color: white;
+            font-size: 25px;
+            font-family: 'Dancing Script', cursive;
+            background-color: rgb(8, 90, 8);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;        
+        }
+    }
+
+    @media screen and (min-width:600px){
+        main{
+            h2{
+                color: white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 40px;
+                background-color: rgb(8, 90, 8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1rem;              
+            }
+            p{
+                color: white;
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+                background-color: rgb(8, 90, 8);
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70vh;
+        }
+        }
+    }  
+
+
+    @media screen and (min-width:1024px){
+        main{
+            h2{
+                color: white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 50px;
+                background-color: rgb(8, 90, 8);
+                display: inline-block;
+                justify-content: left;
+                align-items: left;
+                margin-bottom: 1rem;               
+            }
+            p{
+                color: white;
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+                background-color: rgb(8, 90, 8);
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70vh;                
+            }
+
+        }
+    }
+
+// estilos productos
+
+    main{
+        .titulo{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Satisfy', cursive;            
+        }
+        .padre{
+            height: 70vh;
+            display: flex;
+            background-color: rgb(8, 90, 8);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem; 
+        }
+
+        .productos{
+            font-size: 20px;
+            text-align: center;
+            align-items: center;            
+        }
+
+        .titulo-producto{
+            text-decoration: underline;
+        }
+        ul{
+            list-style: none;
+        }
+        .gustos{
+            list-style: none;
+            font-size: 1rem;
+        }
+        .img-uno .img-dos .img-tres{
+            display: none;
+        }
+        .productos{
+            color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            justify-content: space-between;            
+        }
+
+    }
+
+    @media screen and (min-width:600px){
+        main{
+            .img-uno .img-dos .img-tres{
+                display: block;
+            }
+            .padre{
+                display: grid;
+                background-color: rgb(8, 90, 8);
+                margin: 5rem 2rem 5rem 2rem;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1.5fr 1.5fr 1.5fr;
+                gap: 2rem;
+                grid-template-areas:
+                "productos imagenes"
+                "productos imagenes"
+                "productos imagenes" ;
+                row-gap: 3rem;
+                column-gap: 3rem;
+                justify-items: center;
+                align-items: center;                
+            }
+            .productos{
+                text-align: left;
+            }
+            .img-uno{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .img-dos{
+                margin-bottom: 1rem;
+            }
+            
+            .img-tres{
+                margin-bottom: 1rem;
+            }   
+            .sorrentinos{
+                width: 70%;
+                height: 70%;
+            }
+            
+            .ravioles{
+                width: 70%;
+                height: 70%;
+            }
+            
+            .ñoquis{
+                width: 70%;
+                height: 70%;
+            }                     
+        }
+    }
+    @media screen and (min-width:1024px){
+        main{
+            .img-uno .img-dos .img-tres{
+                display: block;
+            }
+            .padre{
+                height: 75vh;
+                display: grid;
+                background-color: rgb(8, 90, 8);
+                margin: 1rem 15rem 1rem 15rem;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1.5fr 1.5fr 1.5fr;
+                gap: 2rem;
+                grid-template-areas:
+                "productos imagenes"
+                "productos imagenes"
+                "productos imagenes" ;
+                row-gap: 3rem;
+                column-gap: 3rem;
+                justify-items: center;
+                align-items: center;                
+            }
+            .productos{
+                text-align: left;
+                font-size: 35px;                
+            }
+            .img-uno{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .img-dos{
+                margin-bottom: 1rem;
+            }
+            
+            .img-tres{
+                margin-bottom: 1rem;
+            }
+            
+            .sorrentinos{
+                width: 100%;
+                height: 100%;
+            }
+            
+            .ravioles{
+                width: 100%;
+                height: 100%;
+            }
+            
+            .ñoquis{
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+    }
+
+    // estilos envio
+
+    main{
+        .info-padre{
+            display: inline-block;
+            background-color: rgb(8, 90, 8);
+            color: white;
+            text-align: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            height: 37.5rem;
+            font-size: 20px;            
+        }
+        .info{
+            display: flex;
+            text-align: center;
+        }
+
+        .envios-mapa{
+            display: flex;
+            margin: top 5rem;
+            justify-content: center;
+        }
+    }
+    @media screen and (min-width:600px){
+        main{
+            .info-padre{
+                display: inline-block;
+                background-color: rgb(8, 90, 8);
+                color: white;
+                text-align: center;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                height: 37.5rem;
+                font-size: 25px;                
+            }
+            .info{
+                display: flex;
+                text-align: center;
+            }
+            .envios-mapa{
+                display: flex;
+                margin-top: 5rem;
+                justify-content: center;
+            }
+        }
+    }
+    @media screen and (min-width:1024px){
+        main{
+            .info-padre{
+                display: inline-block;
+                background-color: rgb(8, 90, 8);
+                color: white;
+                text-align: center;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                height: 37.5rem;
+                font-size: 30px;                
+            }
+            .info{
+                display: flex;
+                text-align: center;          
+            }
+            .envios-mapa{
+                display: flex;
+                margin-top: 5rem;
+                justify-content: center;                
+            }
+        }
+    }
+
+// estilos contacto
+    main{
+        .link{
+            text-decoration: underline;
+            color: white;
+        }
+        .titulo-forms{
+            font-size: 12px;
+        }
+        .fondo-dos{
+            background-color: rgb(8, 90, 8);
+            display: block;
+            color: white;
+            text-align: center;
+            margin: 2rem 1rem 2rem 1rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            height: 70vh;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;            
+        }
+        .formulario-contacto{
+            list-style-type: none;
+        }
+        .consulta-titulo{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;            
+        }
+        .consulta{
+            width: 300px;
+            height: 60px;
+            text-align:left;
+            justify-content:start;
+            border: 10px;
+            margin-top: 5px;            
+        }
+        .enviar{
+            margin-top: 1rem;            
+        }
+        .boton-enviar{
+            outline-style: none;
+            background-color: white;
+            font-size: 17px;
+            text-align: center;            
+        }
+    }
+
+    @media screen and (min-width:600px){
+        main{
+            .link{
+                text-decoration: underline;
+                color: white;   
+            }
+            .titulo-forms{
+                font-size: 21px;                
+            }
+            .fondo-dos{
+                background-color: rgb(8, 90, 8);
+                display: block;
+                color: white;
+                text-align: center;
+                margin: 2rem 1rem 2rem 1rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                height: 70vh;
+                font-size: 20px;
+                align-items: center;
+                justify-content: center;            
+            }
+            .formulario-contacto{
+                list-style-type: none;
+            }
+            .consulta-titulo{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;            
+            }
+            .consulta{
+                width: 300px;
+                height: 60px;
+                text-align:left;
+                justify-content:start;
+                border: 10px;
+                margin-top: 5px;            
+            }         
+            
+        }
+    }
+    @media screen and (min-width:1024px){
+        main{
+            .link{
+                text-decoration: underline;
+                color: white;   
+            }
+            .titulo-forms{
+                font-size: 30px;                
+            }
+            .fondo-dos{
+                background-color: rgb(8, 90, 8);
+                display: block;
+                color: white;
+                text-align: center;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                height: 70vh;
+                font-size: 25px;           
+            }
+            .formulario-contacto{
+                list-style-type: none;
+            }            
+            .consulta{
+                width: 500px;
+                height: 250px;
+                text-align:center;
+                border: 10px;
+                margin-top: 5px;            
+            }   
+        }                     
+    }    
