@@ -1,0 +1,164 @@
+/* estilos productos */
+
+main{
+    .titulo{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Satisfy', cursive;            
+    }
+    .padre{
+        height: 70vh;
+        display: flex;
+        background-color: rgb(8, 90, 8);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem; 
+    }
+
+    .productos{
+        font-size: 20px;
+        text-align: center;
+        align-items: center;            
+    }
+
+    .titulo-producto{
+        text-decoration: underline;
+    }
+    ul{
+        list-style: none;
+    }
+    .gustos{
+        list-style: none;
+        font-size: 1rem;
+    }
+    .img-uno{
+        display: none;
+    }
+    .img-dos{
+        display: none;
+    }
+    .img-tres{
+        display: none;
+    }
+    .productos{
+        color: whitesmoke;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        justify-content: space-between;            
+    }
+
+}
+
+@media screen and (min-width:600px){
+    main{
+        .img-uno{
+            display: block;
+        }
+        .img-dos{
+            display: block;
+        }
+        .img-tres{
+            display: block;
+        }
+        .padre{
+            display: grid;
+            background-color: rgb(8, 90, 8);
+            margin: 5rem 2rem 5rem 2rem;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1.5fr 1.5fr 1.5fr;
+            gap: 2rem;
+            grid-template-areas:
+            "productos imagenes"
+            "productos imagenes"
+            "productos imagenes" ;
+            row-gap: 3rem;
+            column-gap: 3rem;
+            justify-items: center;
+            align-items: center;                
+        }
+        .productos{
+            text-align: left;
+        }
+        .img-uno{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .img-dos{
+            margin-bottom: 1rem;
+        }
+        
+        .img-tres{
+            margin-bottom: 1rem;
+        }   
+        .sorrentinos{
+            width: 70%;
+            height: 70%;
+        }
+        
+        .ravioles{
+            width: 70%;
+            height: 70%;
+        }
+        
+        .ñoquis{
+            width: 70%;
+            height: 70%;
+        }                     
+    }
+}
+@media screen and (min-width:1024px){
+    main{
+        .img-uno .img-dos .img-tres{
+            display: block;
+        }
+        .padre{
+            height: 75vh;
+            display: grid;
+            background-color: rgb(8, 90, 8);
+            margin: 1rem 15rem 1rem 15rem;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1.5fr 1.5fr 1.5fr;
+            gap: 2rem;
+            grid-template-areas:
+            "productos imagenes"
+            "productos imagenes"
+            "productos imagenes" ;
+            row-gap: 3rem;
+            column-gap: 3rem;
+            justify-items: center;
+            align-items: center;                
+        }
+        .productos{
+            text-align: left;
+            font-size: 35px;                
+        }
+        .img-uno{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .img-dos{
+            margin-bottom: 1rem;
+        }
+        
+        .img-tres{
+            margin-bottom: 1rem;
+        }
+        
+        .sorrentinos{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ravioles{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ñoquis{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}
