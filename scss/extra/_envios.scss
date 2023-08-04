@@ -1,9 +1,11 @@
 /* estilos envios */
 
+@import "extra/variables";
+
 main{
     .info-padre{
         display: inline-block;
-        background-color: rgb(8, 90, 8);
+        background-color: $color-principal;
         color: white;
         text-align: center;
         margin-left: 1rem;
@@ -26,7 +28,7 @@ main{
     main{
         .info-padre{
             display: inline-block;
-            background-color: rgb(8, 90, 8);
+            background-color: $color-principal;
             color: white;
             text-align: center;
             margin-left: 1rem;
@@ -49,7 +51,7 @@ main{
     main{
         .info-padre{
             display: inline-block;
-            background-color: rgb(8, 90, 8);
+            background-color: $color-principal;
             color: white;
             text-align: center;
             margin-left: 1rem;

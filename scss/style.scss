@@ -1,28 +1,32 @@
+
 /* reset */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@import "extra/extend";
 
 body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    @extend %estilos;
+    
 }
+
 
 // estilos header todos los html
 
+@import "extra/variables";
+@import "extra/mixin";
+
 header{
     .logo{
-        width: 60%;
-        display: flex;
-        align-items: left;
+        @include estilos-logo(60%, flex, left);
     }
 
     .menu-color{
-        background-color: rgb(8, 90, 8);
+        background-color: $color-principal;
         position: sticky;
         text-align: center;
         font-family: 'Nanum Myeongjo', serif;
@@ -55,11 +59,9 @@ header{
 // estilos de todos los footer
 
 footer {
-    height: 2rem;
-    margin-top: auto;
-    background-color: rgb(8, 90, 8);
-    text-align: center;
-    bottom: 0;
+
+    @include estilos-footer (2rem, auto, $color-principal, center, 0);
+
     h3{
         font-size: 15px;
         color: white;

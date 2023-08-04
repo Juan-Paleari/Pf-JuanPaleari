@@ -1,4 +1,5 @@
 /* estilos contacto */
+@import "extra/variables";
 
 main{
     .link{
@@ -9,7 +10,7 @@ main{
         font-size: 12px;
     }
     .fondo-dos{
-        background-color: rgb(8, 90, 8);
+        background-color: $color-principal;
         display: block;
         color: white;
         text-align: center;
@@ -59,7 +60,7 @@ main{
             font-size: 21px;                
         }
         .fondo-dos{
-            background-color: rgb(8, 90, 8);
+            background-color: $color-principal;
             display: block;
             color: white;
             text-align: center;
@@ -101,7 +102,7 @@ main{
             font-size: 30px;                
         }
         .fondo-dos{
-            background-color: rgb(8, 90, 8);
+            background-color: $color-principal;
             display: block;
             color: white;
             text-align: center;

@@ -1,0 +1,14 @@
+@mixin estilos-logo($width, $display, $align-items){
+    width: $width;
+    display: $display;
+    align-items: $align-items;
+
+}
+
+@mixin estilos-footer($height, $margin-top, $background-color, $text-align, $bottom){
+    height: $height;
+    margin-top: $margin-top;
+    background-color: $background-color;
+    text-align: $text-align;
+    bottom: $bottom;
+}
