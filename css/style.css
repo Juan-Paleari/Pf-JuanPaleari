@@ -90,67 +90,125 @@ main .inicio {
 /* estilos de quienes somos */
 main {
   margin-top: 1.5rem; }
-  main h2 {
+  main h1 {
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-size: 40px;
     background-color: #085a08;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem; }
-  main p {
-    color: white;
-    font-size: 25px;
-    font-family: 'Dancing Script', cursive;
-    background-color: #085a08;
-    text-align: center;
+  main .quienes-somos {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh; }
+    flex-direction: column;
+    row-gap: 0.1rem;
+    background-color: #085a08;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border: 1rem;
+    margin: 1rem 2rem 1rem 2rem; }
+    main .quienes-somos .parrafo {
+      display: flex;
+      margin-top: 0.1rem;
+      margin-bottom: 0.1rem; }
+      main .quienes-somos .parrafo p {
+        color: white;
+        font-size: 15px;
+        font-family: 'Dancing Script', cursive;
+        background-color: #085a08;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; }
+    main .quienes-somos .carrusel {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-top: 0.1rem; }
 
 @media screen and (min-width: 600px) {
-  main h2 {
+  main h1 {
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-size: 40px;
     background-color: #085a08;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem; }
-  main p {
-    color: white;
-    font-size: 25px;
-    font-family: 'Dancing Script', cursive;
-    background-color: #085a08;
-    text-align: center;
+  main .quienes-somos {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh; } }
+    flex-direction: column;
+    row-gap: 0.1rem;
+    background-color: #085a08;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border: 1rem;
+    margin: 1rem 2rem 1rem 2rem; }
+    main .quienes-somos .parrafo {
+      display: flex;
+      margin-top: 0.1rem;
+      margin-bottom: 0.1rem; }
+      main .quienes-somos .parrafo p {
+        color: white;
+        font-size: 20px;
+        font-family: 'Dancing Script', cursive;
+        background-color: #085a08;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%; }
+    main .quienes-somos .carrusel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-top: 0.1rem; } }
 
 @media screen and (min-width: 1024px) {
-  main h2 {
+  main h1 {
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-size: 50px;
     background-color: #085a08;
     display: inline-block;
     justify-content: left;
     align-items: left;
     margin-bottom: 1rem; }
-  main p {
-    color: white;
-    font-size: 50px;
-    font-family: 'Dancing Script', cursive;
-    background-color: #085a08;
-    text-align: center;
+  main .quienes-somos {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh; } }
+    flex-direction: column;
+    row-gap: 0.1rem;
+    background-color: #085a08;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border: 1rem;
+    margin: 1rem 2rem 1rem 2rem; }
+    main .quienes-somos .parrafo {
+      display: flex;
+      margin-top: 0.1rem;
+      margin-bottom: 0.1rem; }
+      main .quienes-somos .parrafo p {
+        color: white;
+        font-size: 30px;
+        font-family: 'Dancing Script', cursive;
+        background-color: #085a08;
+        text-align: center;
+        display: flex;
+        height: 15rem; }
+    main .quienes-somos .carrusel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-top: 0.1rem; } }
 
 /* estilos productos */
 main .titulo {
@@ -374,7 +432,7 @@ main .boton-enviar {
 
 @media screen and (min-width: 600px) {
   main .link {
-    text-decoration: underline;
+    text-decoration: none;
     color: white; }
   main .titulo-forms {
     font-size: 21px; }
